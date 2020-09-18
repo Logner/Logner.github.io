@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style> body {padding: 0; margin: 0;} </style>
+        <script src="/old/assets/lib/p5js/p5.js"></script>
+        <script src="/old/assets/lib/p5js/p5.dom.js"></script>
+        <script src="/old/assets/lib/p5js/p5.sound.js"></script>
+        <script src="/old/assets/js/fire-particles.js", style="position:webkit-sticky;"></script>
+        
+        <meta charset="UTF-8">
+        <title>Eurotrip</title>        
+        <link rel=stylesheet href="/old/assets/css/style.css">  
+        
+    </head>
+    
+    <div class = background style="background-color:black;">
+        <navbar class = menu>
+            <!-- <a class = directory href="/old/"><p class=link>Home</p></a>
+            <a class = directory href="/old/"><p class=link>Misc</p></a> -->
+            <a class = directory href="/old/index.html"><p class=link>Home</p></a>
+            <a class = directory href="/old/assets/resume.pdf"><p class=link>Resume</p></a>
+        </navbar>
+
+        <body style="color:white;">
+            
+            <div align="center";>
+                <h1> Day 1</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d2656794.5832446343!2d1.9636050306024426!3d49.436775453353285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!3m2!1d51.5073509!2d-0.1277583!4m5!1s0x47dc3f75d7f1e363%3A0xacbed9e08cd279f4!2sCalais%2C+France!3m2!1d50.95129!2d1.8586859999999998!4m5!1s0x47c3a4ed73c76867%3A0xc18b3a66787302a7!2sBrussels%2C+Belgium!3m2!1d50.8503396!2d4.3517103!4m5!1s0x47900b9749bea219%3A0xe66e8df1e71fdc03!2sZurich%2C+Switzerland!3m2!1d47.3768866!2d8.541694!5e0!3m2!1sen!2sca!4v1529797484315" width="600" height="450" frameborder="0" style="border:0" allowfullscreen;> </iframe>
+
+                <h1> Day 2 </h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d1375782.8027203577!2d7.326290274963444!3d47.66352410831598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x47900b9749bea219%3A0xe66e8df1e71fdc03!2sZurich%2C+Switzerland!3m2!1d47.3768866!2d8.541694!4m5!1s0x4790ec232f1791bd%3A0xdbe2bec8ae87edf1!2sBlack+Forest%2C+Germany!3m2!1d48.2774862!2d8.185997!4m5!1s0x47907f4b4e283287%3A0xf338ecc02bf593d4!2sRhine+Falls%2C+Laufen-Uhwiesen%2C+Switzerland!3m2!1d47.677951!2d8.6155799!4m5!1s0x478ffa2a79547379%3A0xaef02ad1409952af!2sLucerne%2C+Switzerland!3m2!1d47.050168199999995!2d8.3093072!5e0!3m2!1sen!2sca!4v1529797712861" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <h1> Day 3 </h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d2827523.8496006345!2d8.061196551284045!3d46.20540674777437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x478ffa2a79547379%3A0xaef02ad1409952af!2sLucerne%2C+Switzerland!3m2!1d47.050168199999995!2d8.3093072!4m5!1s0x4785613c2d4846d7%3A0xcaf661cc4df06a05!2sTitlis%2C+Gadmen%2C+Switzerland!3m2!1d46.772048!2d8.4377704!4m5!1s0x477eb1daf1d63d89%3A0x7ba3c6f0bd92102f!2sVenice%2C+Metropolitan+City+of+Venice%2C+Italy!3m2!1d45.440847399999996!2d12.315515099999999!5e0!3m2!1sen!2sca!4v1529797922290" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <h1> Day 4 </h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2954981.8667568914!2d9.640084403614487!3d43.674699671300246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x477eb1daf1d63d89%3A0x7ba3c6f0bd92102f!2sVenice%2C+Metropolitan+City+of+Venice%2C+Italy!3m2!1d45.440847399999996!2d12.315515099999999!4m5!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRome%2C+Metropolitan+City+of+Rome%2C+Italy!3m2!1d41.9027835!2d12.4963655!5e0!3m2!1sen!2sca!4v1529798152118" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <h1> Day 5 </h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d23755.64866306172!2d12.457163971424876!3d41.90455331047847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRome%2C+Metropolitan+City+of+Rome%2C+Italy!3m2!1d41.9027835!2d12.4963655!4m5!1s0x1325890a57d42d3d%3A0x94f9ab23a7eb0!2sVatican+City%2C+00120!3m2!1d41.902916!2d12.453389!5e0!3m2!1sen!2sca!4v1529798276661" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <h1> Day 6 </h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d2980365.4527249914!2d7.953425460610442!3d43.156751934217326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRome%2C+Metropolitan+City+of+Rome%2C+Italy!3m2!1d41.9027835!2d12.4963655!4m5!1s0x132a56a680d2d6ad%3A0x93d57917efc72a03!2sFlorence%2C+Metropolitan+City+of+Florence%2C+Italy!3m2!1d43.769560399999996!2d11.2558136!4m5!1s0x12d5919af0f6598f%3A0xaab80fb5a78478c8!2sPisa%2C+Province+of+Pisa%2C+Italy!3m2!1d43.722838599999996!2d10.401688799999999!4m5!1s0x12cdf5450348b727%3A0x3c017283ac41265d!2sSan+Remo%2C+Province+of+Imperia%2C+Italy!3m2!1d43.815967099999995!2d7.7760567!5e0!3m2!1sen!2sca!4v1529798375927" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <h1> Day 7 </h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d369307.77746510744!2d7.109627620646588!3d43.68525162217734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x12cdf5450348b727%3A0x3c017283ac41265d!2s18038+Sanremo%2C+Province+of+Imperia%2C+Italy!3m2!1d43.815967099999995!2d7.7760567!4m5!1s0x12cdd0106a852d31%3A0x40819a5fd979a70!2sNice%2C+France!3m2!1d43.710172799999995!2d7.2619532!4m5!1s0x12ce8180530cffff%3A0x40819a5fd979e20!2sCannes%2C+France!3m2!1d43.552847!2d7.0173689999999995!4m5!1s0x12cdc287dedfadcd%3A0xee15296ed95b686c!2sMonte+Carlo%2C+Monaco-Ville%2C+Monaco!3m2!1d43.740071799999996!2d7.426643599999999!4m5!1s0x12cdf5450348b727%3A0x3c017283ac41265d!2sSanremo%2C+Province+of+Imperia%2C+Italy!3m2!1d43.815967099999995!2d7.7760567!5e0!3m2!1sen!2sca!4v1529798691652" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <h1> Day 8 </h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2889285.2417736384!2d5.071216473476722!3d44.99309400087452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x12cdf5450348b727%3A0x3c017283ac41265d!2sSanremo%2C+Province+of+Imperia%2C+Italy!3m2!1d43.815967099999995!2d7.7760567!4m5!1s0x478c650693d0e2eb%3A0xa0b695357b0bbc39!2sGeneva%2C+Switzerland!3m2!1d46.2043907!2d6.1431577!5e0!3m2!1sen!2sca!4v1529798733251" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <h1> Day 9 </h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2763352.9072004864!2d2.0146870927911418!3d47.43949941641061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x478c650693d0e2eb%3A0xa0b695357b0bbc39!2sGeneva%2C+Switzerland!3m2!1d46.2043907!2d6.1431577!4m5!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C+France!3m2!1d48.856614!2d2.3522219!5e0!3m2!1sen!2sca!4v1529798772805" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <h1> Day 10 </h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d2617894.7673549554!2d-0.8559411103683552!3d50.15107673358134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C+France!3m2!1d48.856614!2d2.3522219!4m5!1s0x47dc3f75d7f1e363%3A0xacbed9e08cd279f4!2sCalais%2C+France!3m2!1d50.95129!2d1.8586859999999998!4m5!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!3m2!1d51.5073509!2d-0.1277583!5e0!3m2!1sen!2sca!4v1529798805080" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+            </div>
+        </body>   
+        
+        <footer style="position: fixed; bottom: 0px; background-color:black; width: 100%; display:grid; grid-template-columns: auto auto;"> 
+            <div> <p style ="color:white"> &nbsp; &nbsp; 2019 Personal website &nbsp; <span class = separator> | </span> &nbsp; Designed by <a class=link href = "/" style="color:white;">Kumash Patel</a> </p>
+            </div>
+            <div style="text-align: right; padding-top: 15px; padding-right: 15px;">
+            <a style="color: yellow; text-decoration: none;" href= "https://github.com/Logner"> <img src="/old/assets/img/GithubLogo.png" style=" width: 25px;"></a>
+            </div>
+        </footer>
+    </div>
+</html>

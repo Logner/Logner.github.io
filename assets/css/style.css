@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+:root {
+    --dark-brown:#382933;
+    --lighter-brown: #4a3f35;
+    --teal:#065C6F;
+    --jade:#3B5249;
+    --emrald:rgb(81, 152, 114);
+    --peach:#FFBB91;
+    --light:#A4B494;
+}
+
+/* Applying flex to the header and making header sticky */
+header{
+    background-color:var(--dark-brown);
+
+    width: 100%;
+    font-size: 16px;
+    align-content: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    z-index: 10000;
+}
+
+/* Stylizing Header elements */
+header a, .nav-item, .old-item{
+    color: var(--light);
+    text-decoration: none;
+    padding: 20px 10px;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+header a:hover, .nav-item:hover, .old-item:hover, .hero-tagline a:hover, .section-content a:hover{
+    color: var(--peach);
+
+    /*TODO: remove this, add this to only .old-item:hover */
+    background-color: var(--jade);
+}
+
+header h1{
+    padding: 3px 50px;
+    overflow: hidden;
+
+    /*TODO: remove everything below this upto flex-box to return to original style */
+    background-color: var(--light);
+    transition: 0.5s;
+}
+
+header h1 a {
+    color: var(--dark-brown);
+    transition: 0.5s;
+}
+
+header h1:hover {
+    background-color: var(--jade);
+}
+
+header h1:hover > a{
+    background-color: var(--jade);
+    color: var(--peach);
+}
+
+
+/* Applying flex-box with wrapping to the navbar */
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+    position: relative;
+}
+
+/* Applying a dropdown menu for the old website */
+.old ul{
+    list-style: none;
+    position: absolute;
+    min-width: 160;
+    top: 100%;
+    right: 0%;
+    display: none;
+    }
+
+/* Triggering Dropdown upon hover*/
+.old:hover > ul{
+    display: block;
+}
+
+/* Additional Styles for dropdown menu items */
+.old li{
+    background-color: var(--lighter-brown);
+    text-align: right;
+}
+
+/* Hero Styling */
+#hero{
+    width: 100%;
+    min-height: 70vh;
+
+    background-size: cover;
+    background-position: center;
+    background-image:url("../img/cropped-hero-bg.jpg")
+}
+
+.hero-tagline{
+    position: relative;
+    background-color: rgba(255,255,255,0.6);
+    align-self: flex-end;
+    justify-self: right;
+    max-width: 50%;
+    max-height:50%;
+}
+.hero-tagline a{
+    text-decoration: none;
+    color: var(--emrald);
+    transition: 0.5s;
+}
+
+/* Content Styling */
+body {
+    background-color: var(--light);
+}
+
+/* Applying flex to sections */
+
+section {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section > div {
+    padding: 10px;
+}
+
+.section-title {
+    flex: 1 20%;
+    color: var(--dark-brown);
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.section-content {
+    flex: 4 80%;
+    color: var(--dark-brown);
+    font-size: 15px;
+    line-height: 1.5;
+
+    border-left: 5px solid var(--dark-brown);
+
+}
+
+.section-content a{
+    text-decoration: none;
+    color: var(--lighter-brown);
+    font-weight: bolder;
+    font-size: 15px;
+    transition: 0.5s
+}
+
+/* Work Grid Styling */
+
+#work .section-content{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: dense;
+}
+
+.work-grid-item{
+    min-height: 20vh;
+    min-width: 20vh;
+}
+
+/* Grid item bg images and sizes */
+.pwd-gen{
+    background-image: url('../img/pwd-gen.png');
+    background-size: cover;
+    background-position-y: top;
+}
+
+.run-buddy{
+    background-image: url('../img/run-buddy.png');
+    background-size: cover;
+    background-position-y: top;
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.horiseon{
+    background-image: url('../img/horiseon.png');
+    background-size: cover;
+    background-position-y: top;
+}
+
+.battletank{
+    background-image: url('../img/battle-tank.jpg');
+    background-size: cover;
+    background-position-y: center;
+}
+
+.fire-particles{
+    background-image: url('../img/fire-particles.png');
+    background-size: cover;
+    background-position-y: bottom;
+    grid-row: span 2;
+}
+
+.recaman{
+    background-image: url('../img/recaman.png');
+    background-size: cover;
+    background-position-y: center;
+    grid-column: span 2;
+}
+
+.cobalt{
+    background-image: url('../img/cobalt.jpg');
+    background-size: cover;
+    grid-column: span 2;
+}
+
+/* Grid Animations */
+
+.mobile{
+    display: none;
+}
+
+.work-grid-item{
+    position: relative;    
+}
+
+.overlay {
+    background: linear-gradient(rgba(81, 152, 114, 0.6), var(--dark-brown));
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+
+    text-align:right;
+    font-weight: bolder;
+
+    /*TODO: Why is this needed to fit the image to the grid item???*/
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: ease-in 0.5s;
+}
+
+.overlay h4{
+    position: relative;
+    padding-right: 20px;;
+    font-size: 20px;
+    color: var(--dark-brown);
+    background-color: rgba(255,255,255,0.6)
+}
+
+.overlay h5 {
+    position: relative;
+    padding-right: 20px;
+    font-size: 15px;
+    color:var(--teal);
+    background-color: rgba(255,255,255,0.6)
+}
+
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* Contact me Styling */
+
+footer{
+    background-color: var(--emrald);
+}
+
+footer ul li:hover, footer .section-content a:hover {
+    background: var(--peach);
+}
+
+#contact{
+    padding: 0px 20px;
+    align-items: center;
+
+}
+
+#contact ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#contact .section-content{
+    border-left: none;
+    flex: 1 50%;
+    padding: 0px 10px;
+}
+
+#contact .section-title{
+    padding: 0px 10px;
+}
+
+footer img {
+    max-width: 30px;
+    max-height: 30px;
+    margin: 5px 20px;
+    display: inline;
+}
+
+footer ul li{
+    height: 50px;
+    display:flex;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width: 980px){
+    /* Reshuffling grid for large screens */
+    #work .section-content{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .horiseon {
+        grid-row: span 2;
+    }
+    
+    .recaman {
+        grid-column: span 3;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        display:block;
+    }
+    header h1{
+        width: 100%;
+        text-align: center
+    }
+
+    /* Switching hero for a better fit */
+
+    #hero{
+        background-image:url("../img/hero-bg.jpg");
+        min-height: 50vh;
+    }
+
+    .section-content {
+        border-left: none;
+    }
+
+    /* Disabling animations and dropdowns for smaller screens (mobile) */
+
+    .overlay{
+        display: none;
+    }
+
+    .old ul, .old-item{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+        position: relative;
+    
+        text-align: end;
+        padding-right: 10px;
+        font-weight: bold;
+    
+        background-color: rgba(255,255,255,0.8)
+    }
+
+    .mobile h4 {
+        font-size: 15px;
+        color:var(--dark-brown);
+    }
+
+    .mobile h5 {
+        font-size: 12px;
+        color:var(--teal);
+    }
+
+    #contact .section-title {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    /* Reshuffling grid for smaller screens */
+    #work .section-content{
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .battletank {
+        grid-row: span 2;
+    }
+
+    /* Optimizing contact me for smaller screens */
+
+    #contact .section-title {
+        font-size: 15px;
+    }
+
+
+    footer img {
+        max-width: 20px;
+        max-height: 20px;
+        margin: 5px 10px;
+        display: inline;
+    }
+
+
+}
