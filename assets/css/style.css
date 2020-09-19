@@ -177,6 +177,10 @@ section > .section-content a:hover, .hero-tagline a:hover {
     transition: 0.5s
 }
 
+footer .section-content a{
+    transition: none;
+}
+
 /* Work Grid Styling */
 
 #work .section-content{
