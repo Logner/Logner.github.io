@@ -197,6 +197,30 @@ footer .section-content a{
 }
 
 /* Grid item bg images and sizes */
+.stock-screener{
+    background-image: url('../img/previews/stock-screener.png');
+    background-size: cover;
+    background-position-y: top;
+    background-position-x: center;
+    grid-row: 1 / span 2;
+    grid-column:1 / span 2;
+    top: 0;
+    left: 0;
+}
+
+.weather-dashboard{
+    background-image: url('../img/previews/weather-dashboard.png');
+    background-size: cover;
+    background-position-y: top;
+    grid-column:1 / span 2;
+}
+
+.work-scheduler{
+    background-image: url('../img/previews/work-scheduler.png');
+    background-size: cover;
+    background-position-y: top;
+}
+
 .code-quiz{
     background-image: url('../img/previews/code-quiz.png');
     background-size: cover;
@@ -217,10 +241,6 @@ footer .section-content a{
     background-image: url('../img/previews/run-buddy.png');
     background-size: cover;
     background-position-y: top;
-    grid-row: 1 / span 2;
-    grid-column:1 / span 2;
-    top: 0;
-    left: 0;
 }
 
 .horiseon{
